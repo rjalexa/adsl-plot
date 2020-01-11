@@ -1,8 +1,7 @@
 """Plots the adsl-log generated log."""
 import pandas as pd
 import matplotlib.pyplot as plt
-import matplotlib.dates as mdates
-###### Prepare the data to plot
+# Prepare the data to plot
 # set field delimiter and set column names which will also cause reading from row 1
 data = pd.read_csv('test.log', sep=';', names=[
                    'datetime', 'severity', 'down', 'up', 'loss', 'server'])
