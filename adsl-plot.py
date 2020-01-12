@@ -13,6 +13,8 @@ data['datetime'] = pd.to_datetime(data['datetime'])
 # use a dataframe with just the data I need; cleaner
 speeds_df = data[['datetime', 'down', 'up']]
 
+speeds_df.describe()
+
 # now plot the graph
 fig, ax = plt.subplots()
 
